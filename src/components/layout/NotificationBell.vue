@@ -9,8 +9,8 @@
       </span>
     </button>
     
-      <div v-if="showNotifications" class="absolute right-0 mt-2 w-[calc(100vw-2rem)] max-w-80 bg-white rounded-md shadow-lg z-50">
-        <div class="p-4 border-b border-gray-200">
+      <div v-if="showNotifications" class="fixed left-4 right-4 top-16 sm:absolute sm:left-auto sm:right-0 sm:top-auto sm:mt-2 sm:w-80 bg-white rounded-md shadow-lg z-50">
+          <div class="p-4 border-b border-gray-200">
         <div class="flex justify-between items-center">
           <h3 class="text-lg font-semibold">Notifications</h3>
           <button @click="markAllAsRead" class="text-sm text-primary-600 hover:text-primary-700">
