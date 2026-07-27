@@ -51,7 +51,7 @@
       <h3 class="text-lg font-semibold mb-4">Satisfaction</h3>
       <div v-if="stats.satisfaction_stats" class="text-center">
         <p class="text-4xl font-bold text-primary-600">
-          {{ stats.satisfaction_stats.average_rating?.toFixed(1) || '0.0' }}/5
+          {{ stats.satisfaction_stats?.average_rating ? Number(stats.satisfaction_stats.average_rating).toFixed(1) : '0.0' }}/5
         </p>
         <p class="text-sm text-gray-500 mt-2">
           {{ stats.satisfaction_stats.total_evaluations }} évaluations
